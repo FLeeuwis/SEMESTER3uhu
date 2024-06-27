@@ -14,10 +14,10 @@ import ErrorLayout from "./pages/ErrorLayout.jsx";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-    errorElement:<ErrorLayout />,
+    errorElement: <ErrorLayout />,
     children: [
       {
-        path: "/",
+        path: "/workshops/ViteVrijdag",
         element: <Home />,
       },
       {
@@ -45,5 +45,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} basename="/workshops/ViteVrijdag" />
 );

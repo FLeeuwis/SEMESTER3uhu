@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorLayout />,
     children: [
       {
-        path: "/",
+        path: "/workshops/APIoefening",
         element: <Home />,
       },
       {
@@ -50,5 +50,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} basename="/workshops/APIoefening" />
 );
